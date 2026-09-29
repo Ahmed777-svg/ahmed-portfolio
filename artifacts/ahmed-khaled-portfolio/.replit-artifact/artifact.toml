@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Ahmed Khaled Mahmoud — Portfolio"
+description = "A personal portfolio for Ahmed Khaled Mahmoud, showcasing software engineering, C++ development, cybersecurity skills, and selected projects."
+version = "1.0.0"
+id = "artifacts/ahmed-khaled-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25482
+
+[services.development]
+run = "pnpm --filter @workspace/ahmed-khaled-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ahmed-khaled-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ahmed-khaled-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25482"
+BASE_PATH = "/"
