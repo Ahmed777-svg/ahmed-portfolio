@@ -1,4 +1,4 @@
 [build]
   base = "artifacts/ahmed-khaled-portfolio"
-  command = "npm run build"
+  command = "PORT=3000 npm run build"
   publish = "dist"
