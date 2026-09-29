@@ -291,7 +291,7 @@ function Portfolio() {
                 alt="Ahmed Khaled Mahmoud in a suit"
                 className="visual-image"
                 height="310"
-                src="/Ahmed_Khaled_Hero.jpeg"
+                src="/Profile2.jpeg"
                 width="310"
               />
             </div>
@@ -311,7 +311,7 @@ function Portfolio() {
                 alt="Ahmed Khaled Mahmoud standing outdoors"
                 className="portrait-image"
                 height="340"
-                src="/Ahmed_Khaled_Profile.jpeg"
+                src="/Profile.jpeg"
                 width="340"
               />
               <div className="portrait-caption">profile.photo // Ahmed Khaled</div>
@@ -452,8 +452,6 @@ function Home() {
 
 function Router() {
   return (
-    // Keep a shared shell (sidebar, navbar) outside the boundary so it
-    // survives a page crash.
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/" component={Home} />
