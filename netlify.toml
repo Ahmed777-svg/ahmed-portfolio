@@ -1,0 +1,4 @@
+[build]
+  base = "artifacts/aevora"
+  command = "npm run build"
+  publish = "dist"
