@@ -273,6 +273,156 @@ function Portfolio() {
             </p>
             <div className="hero-actions reveal stagger-3">
               <a className="button-primary" data-testid="link-view-projects" href="#projects">View my work <ArrowDownRight size={15} /></a>
+              <a className="button-ghost" data-testid="link-view-cv" href="/Ahmed_CV.pdf" rel="noreferrer" target="_blank">View CV <ExternalLink size={15} /></a>
+              <a className="button-ghost" data-testid="link-download-cv" href="/Ahmed_CV.pdf" download="Ahmed_Khaled_CV.pdf">Download CV <Download size={15} /></a>
+            </div>
+            <div className="hero-meta reveal stagger-4">
+              <span className="availability">Open to meaningful opportunities</span>
+              <span className="hero-socials">
+                <a aria-label="Ahmed Khaled on GitHub" className="social-link" data-testid="link-github-hero" href="https://github.com/Ahmed777-svg" rel="noreferrer" target="_blank"><Github size={16} /></a>
+                <a aria-label="Ahmed Khaled on LinkedIn" className="social-link" data-testid="link-linkedin-hero" href="https://linkedin.com/in/ahmed-khaled-28ab933b4" rel="noreferrer" target="_blank"><Linkedin size={16} /></a>
+              </span>
+            </div>
+          </div>
+          <div className="hero-visual reveal stagger-2" aria-label="Portrait of Ahmed Khaled Mahmoud">
+            <div className="visual-orbit" />
+            <div className="visual-core">
+              <img
+                alt="Ahmed Khaled Mahmoud in a suit"
+                className="visual-image"
+                height="310"
+                src="/Profile2.jpeg"
+                width="310"
+              />
+            </div>
+            <div className="visual-tag tag-top">[ profile.identity ]</div>
+            <div className="visual-tag tag-bottom">focus: secure / useful / clear</div>
+            <div className="visual-corner">01 / 05</div>
+          </div>
+        </div>
+        <a className="scroll-cue" href="#about">scroll to inspect</a>
+      </section>
+
+      <section className="section" id="about">
+        <div className="container-wide about-grid">
+          <div className="portrait-frame reveal">
+            <div className="portrait-inner">
+              <img
+                alt="Ahmed Khaled Mahmoud standing outdoors"
+                className="portrait-image"
+                height="340"
+                src="/Profile.jpeg"
+                width="340"
+              />
+              <div className="portrait-caption">profile.photo // Ahmed Khaled</div>
+            </div>
+          </div>
+          <div className="about-copy">
+            <div className="reveal">
+              <div className="eyebrow">01 / about the operator</div>
+              <h2 className="section-heading">Curious by nature.<br /><em>Precise by practice.</em></h2>
+            </div>
+            <p className="reveal stagger-1">I’m Ahmed Khaled Mahmoud, a Computer Science student at Benha University specializing in software engineering, Red Team operations, and Linux system administration. C++ is where I sharpen my thinking; cybersecurity is where I’m learning to apply it with responsibility.</p>
+            <p className="reveal stagger-2">I care about dependable software, readable logic, and the small decisions that make a system easier to trust. Through NTI training and the ICPC Benha Community, I’m building a practical foundation across systems, algorithms, and security.</p>
+            <div className="info-strip reveal stagger-3">
+              <div className="info-item"><span>Based in</span><strong>Qalyubia, Egypt</strong></div>
+              <div className="info-item"><span>Education</span><strong>Benha University · CS</strong></div>
+              <div className="info-item"><span>Experience</span><strong>NTI · Linux Admin · 2026</strong></div>
+            </div>
+            <div className="credentials-grid reveal stagger-4">
+              <article className="credential-card">
+                <span>Experience</span>
+                <strong>Linux Administration Specialist Trainee</strong>
+                <small>National Telecommunication Institute · 2026</small>
+              </article>
+              <article className="credential-card">
+                <span>Certifications</span>
+                <strong>NTI Linux Administration · NTI Soft Skills</strong>
+                <small>Cyber Security GDG · C1 English MODLI</small>
+              </article>
+              <article className="credential-card">
+                <span>Activity</span>
+                <strong>ICPC Benha Community</strong>
+                <small>Competitive Programmer · 2025—Present</small>
+              </article>
+            </div>
+            <div className="reveal stagger-4">
+              <a className="social-link" data-testid="link-linkedin-about" href="https://linkedin.com/in/ahmed-khaled-28ab933b4" rel="noreferrer" target="_blank"><Linkedin size={16} /> LinkedIn <ExternalLink size={12} /></a>
+              <a className="social-link" data-testid="link-github-about" href="https://github.com/Ahmed777-svg" rel="noreferrer" target="_blank"><Github size={16} /> GitHub <ExternalLink size={12} /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section skills-section" id="skills">
+        <div className="container-wide skills-layout">
+          <div>
+            <div className="reveal">
+              <div className="eyebrow">02 / working toolkit</div>
+              <h2 className="section-heading">The stack is a<br /><em>way of thinking.</em></h2>
+              <p className="section-copy" style={{ marginTop: '1.5rem' }}>A practical mix of systems programming, web fundamentals, and the tools that help me see a system from both sides.</p>
+            </div>
+            <div className="skill-note reveal stagger-2">Currently deepening my understanding of networking, secure development, and the discipline behind a good penetration test.</div>
+          </div>
+          <div className="skill-cloud reveal stagger-1">
+            {skills.map((skill, index) => <span className="skill-badge" data-testid={`badge-skill-${index}`} key={skill}>{skill}</span>)}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" id="projects">
+        <div className="container-wide">
+          <div className="projects-header reveal">
+            <div>
+              <div className="eyebrow">03 / selected builds</div>
+              <h2 className="section-heading">Small systems.<br /><em>Serious intent.</em></h2>
+            </div>
+            <span className="mono" style={{ color: 'var(--ink-soft)', fontSize: '.68rem' }}>projects.log // 01—03</span>
+          </div>
+          <div className="project-grid">
+            <article className="project-card project-featured glass reveal">
+              <div>
+                <div className="project-index">PROJECT / 001</div>
+                <h3 className="project-title">C++ Data Structures &amp; Algorithmic Systems</h3>
+                <p className="project-desc">Custom C++ modules implementing linked lists, trees, hash tables, pointers, and memory management algorithms, with a focus on computational complexity and high-performance execution.</p>
+              </div>
+              <div className="project-footer">
+                <div className="project-tags"><span className="project-tag">C++</span><span className="project-tag">Algorithms</span><span className="project-tag">Systems</span></div>
+                <a className="project-link" data-testid="link-project-password-checker" href="https://github.com/Ahmed777-svg" rel="noreferrer" target="_blank">inspect repo <ExternalLink size={13} /></a>
+              </div>
+            </article>
+            <article className="project-card project-placeholder glass reveal stagger-1">
+              <div className="project-index">PROJECT / 002</div>
+              <h3 className="project-title">Password Strength Checker</h3>
+              <p className="project-desc">A focused C++ utility that evaluates password quality against practical rules and gives clear feedback instead of hiding behind a single score.</p>
+              <span className="project-tag" style={{ width: 'fit-content', marginTop: '1.2rem' }}>C++ / BUILT</span>
+            </article>
+            <article className="project-card project-placeholder glass reveal stagger-2">
+              <div className="project-index">PROJECT / 003</div>
+              <h3 className="project-title">Something useful is compiling</h3>
+              <p className="project-desc">The next build will be shaped by a real problem, not a tutorial.</p>
+              <span className="project-tag" style={{ width: 'fit-content', marginTop: '1.2rem' }}>COMING SOON</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section contact-section" id="contact">
+        <div className="container-wide contact-grid">
+          <div className="contact-aside">
+            <div className="reveal">
+              <div className="eyebrow">04 / open channel</div>
+              <h2 className="section-heading">Have a problem<br /><em>worth solving?</em></h2>
+              <p className="section-copy">Tell me what you’re working on, what is unclear, or what needs to be made more dependable. I read every message.</p>
+            </div>
+            <div className="contact-details reveal stagger-2">
+              <a className="contact-detail" data-testid="link-contact-email" href="mailto:eng.ahmed.khaleddd@gmail.com"><Mail size={16} /> eng.ahmed.khaleddd@gmail.com</a>
+              <a className="contact-detail" data-testid="link-contact-phone" href="tel:+201153051040"><Phone size={16} /> +20 1153051040</a>
+              <span className="contact-detail"><MapPin size={16} /> Qalyubia, Egypt</span>
+              <span className="contact-detail"><ShieldCheck size={16} /> Response target: 48 hours</span>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/mrejbwgg" className="contact-form glass reveal stagger-1" data-testid="form-contact" method="POST" onSubmit={handle-view-projects" href="#projects">View my work <ArrowDownRight size={15} /></a>
               <a className="button-ghost" data-testid="link-view-cv" href="/Ahmed_Khaled_CV.pdf" rel="noreferrer" target="_blank">View CV <ExternalLink size={15} /></a>
               <a className="button-ghost" data-testid="link-download-cv" href="/Ahmed_Khaled_CV.pdf" download="Ahmed_Khaled_CV.pdf">Download CV <Download size={15} /></a>
             </div>
